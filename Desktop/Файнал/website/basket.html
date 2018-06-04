@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../website/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Poster</title>
+</head>
+<body>
+	<div class="row row-1">
+  <div class="col-sm-7"><h3 class="title">Poster_gal</h3></div>
+   <div class="col-sm-1"><button type="button" class="btn btn-link"><a href="./index.html">Home</a></button></div>
+ <div class="col-sm-1"><button type="button" class="btn btn-link"><a href="./shop.html">Shop</a></button></div>
+ <div class="col-sm-1"><button type="button" class="btn btn-link"><a href="./about.html">About</a></button></div>
+ <div class="col-sm-1"><button type="button" class="btn btn-link d-flex"><img class='basket-img' src='./images/basket.png'><a href="">Basket &nbsp </a><p id='counter'> </p></button></div>
+
+
+</div>
+<div class="jumbotron">
+    <div class="container">
+          <h1 class="display-3">We are glad to see you in our internet shopping!</h1>
+          <p>Please, choose the posters, which you love and just click the button buy. We want to inform you that shipping all over the world is free.Andalso, buying posters to 300$, you will get discount!</p>
+    </div>
+    <div id='list' class="list">
+
+    </div>
+</div>
+
+<script>
+
+$(document).ready(function(){
+  let itemsCount = 0;
+  let items = [];
+  // localStorage.removeItem('items')
+    document.getElementById("counter").innerHTML = itemsCount;
+
+    if(typeof(Storage) !== "undefined"){
+    if(localStorage.items){
+      items = JSON.parse(localStorage.getItem("items"));
+      itemsCount = items.length;
+      document.getElementById("counter").innerHTML = itemsCount;
+      items.map(function(item){
+        let div = document.createElement('div');
+        div.innerHTML = "<div id ='"+item.id+"' class='product'> <img src='"+item.image+"' width='250px' height='250px' alt='' class='product_image' /> <h3 class='product_name'>"+item.name+"</h3><h4 class='price'> " + item.price+"$</h4> <button onclick='removeItem({id:"+item.id+"})' type='button' class='btn btn-info'>Buy </button></div>"
+        document.getElementById("list").appendChild(div);
+
+      })
+
+
+    }
+  }
+
+
+  removeItem = function(id){
+    console.log(id)
+
+    items.map(function(ss){
+      console.log(ss)
+      if(ss.id == id.id){
+        var index = items.indexOf(ss);
+        items.splice(index,1);
+        itemsCount--;
+      document.getElementById("counter").innerHTML = itemsCount;
+
+        localStorage.setItem('items',items)
+        $("#"+ss.id+"").remove();
+      }
+    })
+  }
+});
+</script>
+</body>
+</html>

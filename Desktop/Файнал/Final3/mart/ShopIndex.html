@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mart - HTML5 Resoponsive onepage e-commerce template </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bree+Serif|Lobster|Pacifico" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="../website/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+        <style>
+.picture{
+    max-width:1648px !important;
+    max-height:600px !important;
+}
+    </style>
+    </head>
+    <body>
+
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div class="preloader-area">
+            	<div class="preloader-box">
+            		<div class="preloader"></div>
+            	</div>
+            </div>
+        </div>
+
+
+        <section class="header-top-section">
+            <div class="container">
+                <div class="row">
+                    <div  class="col-md-6">
+                        <div class="header-top-content">
+                            <ul class="nav nav-pills navbar-left">
+                                <li><a href="#"><i class="pe-7s-call"></i><span>+7707-349-62-97</span></a></li>
+                                <li><a href="#"><i class="pe-7s-mail"></i><span> info@mart.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div  class="col-md-6">
+                        <div class="header-top-menu">
+                            <ul class="nav nav-pills navbar-right">
+                                
+                                <li><a href="ShopIndex.html">Checkout</a></li>
+                                <li><a href="example228/index.html"><i class="pe-7s-lock"></i>Login/Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <header class="header-section">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><b>M</b>art</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="index.html#suda">About Us</a></li>
+                            <li><a href="index.html#newCol">shop</a></li>
+                            <li><a href="index.html#suda2">Blog</a></li>
+                            <li><a href="index.html#suda3">Contact Us</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right cart-menu">
+                        <li><a href="basket.html"><span> Cart &nbsp;</span> <span class="shoping-cart"><p id='counter'></p></span></a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container -->
+            </nav>
+        </header>
+
+        <section class="search-section">
+            <div class="container">
+                <div class="row subscribe-from">
+                    <div class="col-md-12">
+                        <form class="form-inline col-md-12 wow fadeInDown animated">
+                            <div class="form-group">
+                                <input type="email" class="form-control subscribe" id="email" placeholder="Search...">
+                                <button class="suscribe-btn" ><i class="pe-7s-search"></i></button>
+                            </div>
+                        </form><!-- end /. form -->
+                    </div>
+                </div><!-- end of/. row -->
+            </div><!-- end of /.container -->
+        </section><!-- end of /.news letter section -->
+
+
+<div class="list container">
+    
+        <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+    <div class="product ">
+        <img src="images/9.png" width="250px" height="250px" alt="" class="product_image">
+        <h3 class="product_name">Cool thing1</h3>
+        <h4 class="price">100$</h4>
+        <button onclick="addItem({name:'Cool thing1',price :100,image:'images/9.png'})" type="button"
+                class="btn btn-info">Buy
+        </button>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+    <div class="product  ">
+
+        <img src="images/10.png" width="250px" height="250px" alt="" class="product_image">
+        <h3 class="product_name">Cool thing2</h3>
+        <h4 class="price">80$</h4>
+        <button onclick="addItem({name:'Cool thing2',price:80,image:'images/10.png'})" type="button"
+                class="btn btn-info">Buy
+        </button>
+    </div>
+</div>
+    <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+    <div class="product  ">
+        <img src="images/18.png" width="250px" height="250px" alt="" class="product_image">
+        <h3 class="product_name">Cool thing3</h3>
+        <h4 class="price">50$</h4>
+        <button onclick="addItem({name:'Cool thing3',price:50,image:'images/18.png'})"
+                type="button" class="btn btn-info">Buy
+        </button>
+    </div>
+</div>
+    <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+    <div class="product  ">
+        <img src="images/20.png" width="250px" height="250px" alt="" class="product_image">
+        <h3 class="product_name">Cool thing4</h3>
+        <h4 class="price">100$</h4>
+        <button onclick="addItem({name:'Cool thing4',price:100,image:'images/20.png'})" type="button"
+                class="btn btn-info">Buy
+        </button>
+    </div>
+</div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+    <div class="product  ">
+        <img src="images/5.png" width="250px" height="250px" alt="" class="product_image">
+        <h3 class="product_name">Cool thing5</h3>
+        <h4 class="price">120$</h4>
+        <button onclick="addItem({name:'Cool thing5',price:120,image:'images/5.png'})" type="button"
+                class="btn btn-info">Buy
+        </button>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+    <div class="product  ">
+        <img src="images/6.png" width="250px" height="250px" alt="" class="product_image">
+        <h3 class="product_name">Cool thing6</h3>
+        <h4 class="price">100$</h4>
+        <button onclick="addItem({name:'Cool thing6',price:100,image:'images/6.png'})" type="button"
+                class="btn btn-info">Buy
+        </button>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+    <div class="product  ">
+        <img src="images/7.png" width="250px" height="250px" alt="" class="product_image">
+        <h3 class="product_name">Cool thing7</h3>
+        <h4 class="price">100$</h4>
+        <button onclick="addItem({name:'Cool thing7',price:100,image:'images/7.png'})" type="button"
+                class="btn btn-info">Buy
+        </button>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
+    <div class="product  ">
+        <img src="images/8.png" width="250px" height="250px" alt="" class="product_image">
+        <h3 class="product_name">Cool thing8</h3>
+        <h4 class="price">100$</h4>
+        <button onclick="addItem({name:'Cool thing8',price:100,image:'images/8.png'})" type="button"
+                class="btn btn-info">Buy
+        </button>
+    </div>
+
+</div>
+</div>
+
+</br>
+        <section class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="titie-section wow fadeInDown animated ">
+                            <h1 id="suda3">GET IN TOUCH</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft animated">
+                        <div class="left-content">
+                            <h1><span>M</span>art</h1>
+                            <h3>We'd love To Meet You In Person Or Via The Web!</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel nulla sapien. Class aptent tacitiaptent taciti sociosqu ad lit himenaeos. Suspendisse massa urna, luctus ut vestibulum necs et, vulputate quis urna. Donec at commodo erat.</p>
+                            <div class="contact-info">
+                                <p><b>Main Office:</b> 123 Elm St. Almaty City, Qazaqstan</p>
+                                <p><b>Phone:</b> +7707-349-62-97</p>
+                                <p><b>Email:</b> kimkaimara@gmail.com</p>
+                            </div>
+                            <div class="social-media">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100012515688633"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://mail.ru"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight animated">
+                        
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aec97260ae04e1d3cd597759cb41638930ec02f165678d05134ee60790f68c2d3&amp;width=456&amp;height=441&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <p class="center">Developed by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">Marmar is very kindest person</a>
+</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+
+    $(document).ready(function () {
+        let itemsCount = 0;
+        let items = [];
+//         localStorage.removeItem('items')
+        document.getElementById("counter").innerHTML = itemsCount;
+
+        if (typeof(Storage) !== "undefined") {
+            if (localStorage.items) {
+                items = JSON.parse(localStorage.getItem("items"));
+                itemsCount = items.length;
+                document.getElementById("counter").innerHTML = itemsCount;
+
+            }
+        }
+
+
+        addItem = function (product) {
+            product['id'] = itemsCount + 1;
+            itemsCount++;
+            items.push(product);
+            document.getElementById("counter").innerHTML = itemsCount;
+            if (typeof(Storage) !== "undefined") {
+                localStorage.setItem("items", JSON.stringify(items));
+            }
+        }
+    });
+</script>
+        <!-- JQUERY -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/custom.js"></script>
+        
+    </body>
+    </html>

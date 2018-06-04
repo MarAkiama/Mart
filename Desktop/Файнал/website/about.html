@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../website/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Poster</title>
+</head>
+<body>
+<div class="row row-1">
+    <div class="col-sm-7"><h3 class="title">Poster_gal</h3></div>
+    <div class="col-sm-1">
+        <button type="button" class="btn btn-link"><a href="./index.html">Home</a></button>
+    </div>
+    <div class="col-sm-1">
+        <button type="button" class="btn btn-link"><a href="./shop.html">Shop</a></button>
+    </div>
+    <div class="col-sm-1">
+        <button type="button" class="btn btn-link">About</button>
+    </div>
+    <div class="col-sm-1">
+        <button type="button" class="btn btn-link d-flex"><img class='basket-img' src='./images/basket.png'><a
+                href="./basket.html">Basket &nbsp </a>
+            <p id='counter'></p></button>
+    </div>
+
+
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading"><span class="text-muted">Hello! My name is Assylnaz (: </span></h2>
+        <p class="lead">A week ago I came up with the idea to create my own mini business, where domestic goods will be
+            promoted. In our store you can find the best posters that would inspire you. Take it easy and just
+            relax! </p>
+        <p class="lead">Contact: </p>
+        <p class="lead">53 Kabanbay batyr Street. </p>
+        <p class="lead">Almaty, Kazakhstan </p>
+        <p class="lead">Tel: 87771112233</p>
+        <p class="lead">Email: postersgal@mysite.com</p>
+
+
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" src="../website/images/12.jpg" width="500px" height="300px"
+             alt="Generic placeholder image">
+    </div>
+</div>
+<script>
+
+    $(document).ready(function(){
+        let itemsCount = 0;
+        let items = [];
+        // localStorage.removeItem('items')
+        document.getElementById("counter").innerHTML = itemsCount;
+
+        if(typeof(Storage) !== "undefined"){
+            if(localStorage.items){
+                items = JSON.parse(localStorage.getItem("items"));
+                itemsCount = items.length;
+                document.getElementById("counter").innerHTML = itemsCount;
+
+            }
+        }
+
+
+    });
+</script>
+</body>
+</html>
